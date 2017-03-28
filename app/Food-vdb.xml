@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vdb name="Food" version="1">
+<description/>
+<property name="validationDateTime" value="Fri Dec 16 09:20:47 CET 2016"/>
+<property name="validationVersion" value="8.12.9"/>
+<model name="Services" type="VIRTUAL">
+<metadata type="DDL"><![CDATA[
+CREATE VIEW Retail (
+	col1 integer NOT NULL
+)
+AS
+	SELECT 19;
+]]></metadata>
+</model>
+</vdb>
