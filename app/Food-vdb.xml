@@ -12,7 +12,7 @@ CREATE FOREIGN TABLE FOOD (
 	category string(255) NOT NULL OPTIONS(NAMEINSOURCE '"category"', NATIVE_TYPE 'VARCHAR'),
 	name string(255) NOT NULL OPTIONS(NAMEINSOURCE '"name"', NATIVE_TYPE 'VARCHAR'),
 	rating integer NOT NULL OPTIONS(NAMEINSOURCE '"author"', NATIVE_TYPE 'INTEGER', FIXED_LENGTH 'TRUE'),
-	CONSTRAINT food_pkey PRIMARY KEY(r_id),
+	CONSTRAINT food_pkey PRIMARY KEY(r_id)
 ) OPTIONS(NAMEINSOURCE '"public"."food"', UPDATABLE 'TRUE')
 ]]></metadata>
 </model>
@@ -23,6 +23,17 @@ CREATE VIEW Retail (
 )
 AS
 	SELECT 19;
+
+CREATE VIEW Food (
+	r_id integer NOT NULL ,
+	author string(255) NOT ,
+	category string(255) NOT,
+	name string(255) NOT NULL ,
+	rating integer NOT NULL ,
+	CONSTRAINT food_pkey PRIMARY KEY(r_id)
+)
+AS
+	SELECT * FROM WINEDB.FOOD;
 ]]></metadata>
 </model>
 </vdb>
