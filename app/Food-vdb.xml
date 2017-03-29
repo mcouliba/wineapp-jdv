@@ -25,11 +25,11 @@ AS
 	SELECT 19;
 
 CREATE VIEW Food (
-	r_id integer NOT NULL ,
-	author string(255) NOT ,
-	category string(255) NOT,
-	name string(255) NOT NULL ,
-	rating integer NOT NULL ,
+	r_id integer NOT NULL,
+	author string(255) NOT NULL,
+	category string(255) NOT NULL,
+	name string(255) NOT NULL,
+	rating integer NOT NULL,
 	CONSTRAINT food_pkey PRIMARY KEY(r_id)
 )
 AS
