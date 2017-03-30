@@ -6,7 +6,7 @@
 <model name="WINEDB">
 <source connection-jndi-name="java:/winedb-ds" name="WINEDB" translator-name="postgresql"/>
 <metadata type="DDL"><![CDATA[
-CREATE FOREIGN TABLE FOOD (
+CREATE FOREIGN TABLE FOOD_PG (
 	r_id integer NOT NULL OPTIONS(NAMEINSOURCE '"r_id"', NATIVE_TYPE 'INTEGER', FIXED_LENGTH 'TRUE'),
 	author string(255) NOT NULL OPTIONS(NAMEINSOURCE '"author"', NATIVE_TYPE 'VARCHAR'),
 	category string(255) NOT NULL OPTIONS(NAMEINSOURCE '"category"', NATIVE_TYPE 'VARCHAR'),
