@@ -11,8 +11,8 @@ CREATE FOREIGN TABLE WINE_PG (
 	name string(255) NOT NULL OPTIONS(NAMEINSOURCE '"name"', NATIVE_TYPE 'VARCHAR'),
 	varietal string(255) NOT NULL OPTIONS(NAMEINSOURCE '"varietal"', NATIVE_TYPE 'VARCHAR'),
 	vineyard string(255) NOT NULL OPTIONS(NAMEINSOURCE '"vineyard"', NATIVE_TYPE 'VARCHAR'),
-	year integer NOT NULL OPTIONS(NAMEINSOURCE '"year"', NATIVE_TYPE 'INTEGER', FIXED_LENGTH 'TRUE'),
-	CONSTRAINT food_pkey PRIMARY KEY(r_id)
+	yeardate integer NOT NULL OPTIONS(NAMEINSOURCE '"yeardate"', NATIVE_TYPE 'INTEGER', FIXED_LENGTH 'TRUE'),
+	CONSTRAINT wine_pkey PRIMARY KEY(wine_id)
 ) OPTIONS(NAMEINSOURCE '"public"."wine"', UPDATABLE 'TRUE')
 ]]></metadata>
 </model>
@@ -23,8 +23,8 @@ CREATE VIEW Wine (
 	name string(255) NOT NULL,
 	varietal string(255) NOT NULL,
 	vineyard string(255) NOT NULL,
-	year integer NOT NULL,
-	CONSTRAINT food_pkey PRIMARY KEY(r_id)
+	yeardate integer NOT NULL,
+	CONSTRAINT wine_pkey PRIMARY KEY(wine_id)
 )
 AS
 	SELECT 1, 'WINE_RHT', 'WINE_SUMMIT', 'WINE_2017', 2017;
