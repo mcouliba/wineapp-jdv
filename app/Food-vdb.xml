@@ -18,12 +18,6 @@ CREATE FOREIGN TABLE FOOD_PG (
 </model>
 <model name="Services" type="VIRTUAL">
 <metadata type="DDL"><![CDATA[
-CREATE VIEW Retail (
-	col1 integer NOT NULL
-)
-AS
-	SELECT 19;
-
 CREATE VIEW Food (
 	r_id integer NOT NULL,
 	author string(255) NOT NULL,
